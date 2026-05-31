@@ -1,0 +1,136 @@
+:root {
+
+    --bg-gradient:  linear-gradient(135deg, #92efd4 0%, #40c39e 100% );
+    --text-color: white;
+    --button-color: rgb(175, 202, 194);
+    --button-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+
+}
+[data-theme="dark"]{
+    --bg-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    --text-color: rgb(0, 0, 0);
+    --button-color: rgb(73, 86, 82);
+    --button-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+.theme-toggle {
+
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #526862;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s, transform 0.2s;
+    backdrop-filter: blur(5px);
+
+
+
+}
+
+
+
+
+.btnF {
+    width:100%;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    color:var(--text-color);
+    padding: 20px;
+    margin: 20px;
+    font-family: cursive;
+    font-size: large;
+    background-color:var(--background-color) ;
+    transition: transform 0.2s, box-shadow 0.2s;
+
+
+
+}
+button:hover {
+    box-shadow: var(--text-color);
+
+}
+
+h1 {
+
+    font-size: 50px;
+    color:var(--text-color) ;
+    text-align: center;
+    justify-self: center;
+    align-items: center;
+    word-wrap: break-word;
+   
+}
+.text {
+    font-size: 50px;
+    color:var(--text-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+body {
+    background-color: var(--bg-gradient);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+
+input {
+
+    width: 100%;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: border-color 0.3s;
+    margin-bottom: 20px;
+
+
+}
+@media (max-width: 480px) {
+    body {
+        align-items: flex-start;
+        padding-top: 50px;
+    }
+    input{
+
+        width: 70%;
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 40px;
+
+    }
+    .text {
+
+        font-size: 25px;
+
+    }
+}
+@media (max-width: 768px) {
+
+
+
+
+}
+
+
