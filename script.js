@@ -1,7 +1,7 @@
 const res = document.querySelector(".text");
 const btn = document.querySelector(".btnF");
 const input = document.querySelector(".search input")
-const themeBtn = document.querySelector('theme-toggle')
+const themeBtn = document.querySelector('.theme-toggle')
 const html = document.documentElement;
 
 
@@ -32,4 +32,12 @@ themeBtn.addEventListener('click', ()=> {
     updateTheme(next);
 
 })
+
+
+
+
+    
+
+
+
 
